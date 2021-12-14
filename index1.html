@@ -25,41 +25,80 @@
             left: 2%;
         }
 
-        header>ul{
+        header>nav>ul{
             position: absolute;
             top: 0;
             bottom: 0;
             right: 30px;
             font-size: 22px;
         }
-        header>ul>li{
+        header>nav>ul>li{
             position: relative;
             display: inline-block;
             padding: 0 10px 0 10px;
 
         }
+       header>nav>ul>li:hover{
+           cursor: pointer;
+           color: #4b0d7e;
+       }
 
         /*-------------------Main-------------------------*/
 
-        main>section{
+        main>nav{
             position: absolute;
-            height: 600%;
-            width: 25%;
-            top: 17.3%;
-            background-color: purple;
+            /*height: 600%;*/
+            width: 22vw;
+            top: 109px;
+            bottom: 0;
+            background-color: #4b0d7e;
             /*border-bottom: 4px solid black;*/
             box-shadow: -2px 6px 9px -4px black;
         }
 
-        body>main>section>ul>li{
+        body>main>nav>ul>li{
             position: relative;
-            display: inline-block;
+            display: block;
             top: 0;
-            right: 0;
+            left: 0;
             left: 0;
             margin: auto;
             font-size: 18px;
+            color: white;
+            padding: 10px 10px 10px 10px;
         }
+        body>main>nav>ul>li:hover{
+            cursor: pointer;
+            color: darkgray;
+        }
+
+        /*-----------------------------------------------------------------*/
+
+       body>main>section>img:nth-child(1){
+           position: relative;
+           width: 25vw;
+           border: 1px solid black;
+           box-shadow: -2px 6px 9px -4px black;
+       }
+       body>main>section>img:nth-child(2){
+           position: relative;
+           width: 25vw;
+           border: 1px solid black;
+           box-shadow: -2px 6px 9px -4px black;
+       }
+       body>main>section>img:nth-child(3){
+           position: relative;
+           width: 25vw;
+           border: 1px solid black;
+           box-shadow: -2px 6px 9px -4px black;
+       }
+       body>main>section{
+           right: 0;
+           position: absolute;
+           top: 117px;
+       }
+
+       /*-------------------Footer-------------------------*/
 
     </style>
 </head>
@@ -67,26 +106,35 @@
 <header>
 
     <img src="asset/image/ijse%20(1).png">
+    <nav>
     <ul>
-        <li>Home</li>
-        <li>Service</li>
-        <li>Contacts</li>
-        <li>Abouts Us</li>
+        <li><b>Home</b></li>
+        <li><b>Service</b></li>
+        <li><b>Contacts</b></li>
+        <li><b>Abouts Us</b></li>
 
     </ul>
+    </nav>
 </header>
 
 <main>
-
-    <section>
+        <nav>
     <ul>
-        <li>Home</li>
-        <li>Service</li>
-        <li>Contacts</li>
-        <li>Abouts Us</li>
+        <li><b>Home</b></li>
+        <li><b>Service</b></li>
+        <li><b>Contacts</b></li>
+        <li><b>Abouts Us</b></li>
 
     </ul>
+        </nav>
+
+    <section>
+        <img src="asset/image/CqmQPtwUEAEcgpI.jpg">
+        <img src="asset/image/3.jpg">
+        <img src="asset/image/CqmQPtwUEAEcgpI.jpg">
     </section>
+
+
 </main>
 
 <footer>
